@@ -39,9 +39,19 @@ app.get('/ventilatordetails',middleware.checkToken,(req,res) => {
 
 });
 
+//search hospital by name
+app.post('/searchhospital',middleware.checkToken,(req,res) =>{
+    console.log("searching hospital by name");
+    var name = req.query.name;
+    console.log(name);
+    var hospitaldetails = db.collection('hospital')
+    .find({ "name" : new RegExp(name, 'i')}).toArray().then(result => res.json(result));
+
+});
+
 //finding ventilator by name of the hospital
 app.post('/searchventilatorbyname',middleware.checkToken,(req,res) => {
-    console.log("searching hospital by name");
+    console.log("searching ventilator by hospital name");
     var name =req.query.name;
     console.log(name);
     var ventilatordetail = db.collection('ventilator').find({'name':new RegExp(name,'i')}).toArray().then(result => res.json(result));
