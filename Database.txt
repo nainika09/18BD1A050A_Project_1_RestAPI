@@ -1,0 +1,45 @@
+"hosp": //database
+{
+"hospital": //collection1
+[{
+        "_id" : ObjectId("5f77706f38fc7c12b722296d"),
+        "hid" : "h1",
+        "name" : "Yashoda",
+        "address" : "Somajiguda"
+},
+{
+        "_id" : ObjectId("5f77706f38fc7c12b722296e"),
+        "hid" : "h2",
+        "name" : "Apollo",
+        "address" : "Banjara Hills"
+},
+{
+        "_id" : ObjectId("5f77706f38fc7c12b722296f"),
+        "hid" : "h3",
+        "name" : "Gandhi",
+        "address" : "Secunderabad"
+}]
+
+"ventilator": //collection2
+[{
+        "_id" : ObjectId("5f77736438fc7c12b7222970"),
+        "hid" : "h1",
+        "vid" : "h1v1",
+        "status" : "occupied",
+        "name" : "Yashoda"
+},
+{
+        "_id" : ObjectId("5f77736438fc7c12b7222971"),
+        "hid" : "h2",
+        "vid" : "h2v2",
+        "status" : "occupied",
+        "name" : "Apollo"
+},
+{
+        "_id" : ObjectId("5f77736438fc7c12b7222972"),
+        "hid" : "h3",
+        "vid" : "h3v3",
+        "status" : "occupied",
+        "name" : "Gandhi"
+}]
+}
